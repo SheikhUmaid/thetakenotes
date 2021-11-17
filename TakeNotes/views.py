@@ -259,4 +259,4 @@ def changebasicinfo(request):
     
     if request.user.is_anonymous == False:
         
-        return HttpResponse("<h1>This Page is coming Soon <br> Go to home page <a href = "thetakenotes.herokuapp.com">here</a></h1>")
+        return HttpResponse("<h1>This Page is coming Soon <br> Go to home page <a href = 'thetakenotes.herokuapp.com'>here</a></h1>")
