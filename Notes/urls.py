@@ -29,6 +29,7 @@ urlpatterns = [
     path('read',views.see,name = "profile"),
     path('update',views.update,name = "Update"),
     path('changepassword',views.ChangePassword,name = "Update"),
+    path('changebasicinfo',views.changebasicinfo,name = "Update"),
 
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
