@@ -1,4 +1,5 @@
 from django.http.response import Http404
+from django.http import HttpResponse
 from django.shortcuts import render, redirect, Http404
 from django.contrib.auth.models import User,auth
 from django.contrib import messages
@@ -254,4 +255,8 @@ def ChangePassword(request):
 
         return redirect("/")
 
-
+def changebasicinfo(request):
+    
+    if request.user.is_anonymous == False:
+        
+        return HttpResponse("<h1>This Page is coming Soon <br> Go to home page <a href = "thetakenotes.herokuapp.com">here</a></h1>")
